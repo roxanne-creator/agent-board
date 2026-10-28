@@ -1,0 +1,22 @@
+{
+  "name": "agent-board",
+  "version": "0.2.0",
+  "description": "A pane that shows what every subagent is working on, in this session and in every other session that runs the plugin: task, type, status, last tool, elapsed time.",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "gistId": {
+      "type": "string",
+      "description": "Id of the private GitHub Gist used as the shared store (the hex id in the gist URL). Leave empty to run single-session only.",
+      "default": "",
+      "title": "Gist id"
+    },
+    "githubToken": {
+      "type": "string",
+      "description": "Fine-grained GitHub token with Gists read and write. Stored in secure storage.",
+      "sensitive": true,
+      "default": "",
+      "title": "GitHub token"
+    }
+  }
+}

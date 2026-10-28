@@ -1,0 +1,11 @@
+{
+  "name": "agent-board",
+  "owner": { "name": "roxanne-creator" },
+  "plugins": [
+    {
+      "name": "agent-board",
+      "source": ".",
+      "description": "A pane that shows what every subagent is working on, in this session and across sessions through a shared GitHub Gist."
+    }
+  ]
+}
